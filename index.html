@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简易网页</title>
+<style>
+body{padding:2rem;font-family:system-ui;}
+button{padding:6px 12px;cursor:pointer;}
+</style>
+</head>
+<body>
+<h3>简单计算器</h3>
+<input id="num" placeholder="输入数字">
+<button onclick="calc()">平方计算</button>
+<p>结果：<span id="res"></span></p>
+<script>
+function calc(){
+    let n = Number(document.getElementById("num").value);
+    document.getElementById("res").innerText = n*n;
+}
+</script>
+</body>
+</html>
